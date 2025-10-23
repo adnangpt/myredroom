@@ -204,3 +204,19 @@ code{
   opacity: 0.1;
   z-index: -1;
 }
+.textInput {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: 1px solid var(--muted);
+  /* background: #2a2a2a; */
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  font-family: 'Crimson Text', serif;
+}
+.textInput:focus{
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.2);
+}

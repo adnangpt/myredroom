@@ -100,12 +100,20 @@ export default function Chat({ systemPrompt }) {
       </div>
 
       <div className="controls">
-        <textarea
+        {/* <textarea
           rows={2}
           placeholder="Say something (like how you're feeling)..."
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={onKeyDown}
+        /> */}
+        <input
+          type="text"
+          placeholder="Whisper your desires..."
+          value={input}
+          onChange={e => setInput(e.target.value)}
+          onKeyDown={onKeyDown}
+          className="textInput"
         />
         <div className="buttons">
           <button onClick={send} disabled={loading}>Send</button>
